@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd `dirname $0`
+
 sudo apt-get install sbcl rlwrap git curl gpg
 curl -O https://beta.quicklisp.org/quicklisp.lisp
 curl -O https://beta.quicklisp.org/quicklisp.lisp.asc
