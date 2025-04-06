@@ -196,7 +196,8 @@
   (sb-ext:save-lisp-and-die
    core-name
    :toplevel (make-toplevel)
-   :executable t))
+   :executable t
+   :save-runtime-options t))
 
 ;;; $ sbcl --load build-script-core.lisp hello.core cl-ppcre alexandria
 (eval-when (:execute)
